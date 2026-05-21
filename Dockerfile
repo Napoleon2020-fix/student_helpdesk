@@ -8,4 +8,6 @@ USER root
 
 RUN pip install rasa-sdk
 
-CMD ["sh", "-c", "rasa run --enable-api --cors '*' --host 0.0.0.0 --port $PORT --model models"]
+EXPOSE 10000
+
+CMD ["rasa", "run", "--enable-api", "--cors", "*", "--host", "0.0.0.0", "--port", "10000"]
