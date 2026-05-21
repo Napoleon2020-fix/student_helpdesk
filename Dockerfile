@@ -10,4 +10,4 @@ RUN pip install rasa-sdk
 
 EXPOSE 10000
 
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--host", "0.0.0.0", "--port", "10000"]
+CMD ["python", "-m", "rasa", "run", "--enable-api", "--cors", "*", "--host", "0.0.0.0", "--port", "10000"]
