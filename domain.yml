@@ -1,0 +1,439 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank
+  - bot_challenge
+  - ask_capabilities
+  - affirm
+  - deny
+
+  # Academic Calendar
+  - ask_resumption_date
+  - ask_exam_date
+  - ask_registration_deadline
+  - ask_how_to_register
+  - ask_academic_calendar
+  - ask_lecture_timetable
+  - ask_semester_duration
+  - ask_carryover_procedure
+  - ask_withdraw_course
+  - ask_add_drop_course
+
+  # Fees & Payment
+  - ask_school_fees
+  - ask_fees_deadline
+  - ask_how_to_pay_fees
+  - ask_payment_receipt
+  - ask_late_fee_penalty
+  - ask_fee_installment
+  - ask_departmental_dues
+  - ask_acceptance_fee_amount
+
+  # Offices & Locations
+  - find_bursary_office
+  - find_campus_life
+  - find_admissions_office
+  - find_library
+  - find_clinic
+  - find_ict_centre
+  - find_registry_office
+  - find_student_affairs
+  - find_cafeteria
+  - find_security_office
+  - find_chapel
+  - find_sports_complex
+  - find_lecture_halls
+  - find_senate_building
+
+  # Admission
+  - ask_rector_name
+  - ask_cutoff_mark
+  - ask_acceptance_procedure
+  - ask_clearance_documents
+  - ask_clearance_date
+  - ask_admission_requirements
+  - ask_change_of_course
+  - ask_deferment_procedure
+  - ask_postgraduate_admission
+  - ask_jupeb_programme
+
+  # Hostel
+  - ask_hostel_availability
+  - ask_hostel_fee
+  - ask_hostel_application
+  - ask_hostel_rules
+  - ask_hostel_location
+  - ask_hostel_allocation
+
+  # Portal & Results
+  - ask_portal_link
+  - ask_portal_password_reset
+  - ask_how_to_check_result
+  - ask_transcript_procedure
+  - ask_portal_issues
+  - ask_how_to_print_result
+  - ask_gpa_calculation
+  - ask_missing_result
+
+  # Staff & Faculty
+  - ask_hod_computing
+  - who_is_dean_computing
+  - ask_vc_office_location
+  - ask_departmental_office
+  - ask_lecturer_contact
+
+  # Student Life
+  - ask_student_id_card
+  - ask_library_card
+  - ask_school_bus
+  - ask_scholarship_info
+  - ask_clubs_and_societies
+  - ask_sport_facilities
+  - ask_cafeteria_menu
+  - ask_graduation_requirement
+  - ask_convocation_date
+  - ask_dress_code
+  - ask_internship_info
+  - ask_industrial_training
+  - ask_nysc_mobilization
+  - ask_result_upgrade
+  - ask_certificate_collection
+  - ask_exam_malpractice_consequence
+  - ask_referral_exam
+  - ask_exam_deferment
+  - ask_lost_id_card
+  - ask_wifi_access
+  - ask_power_supply
+
+responses:
+
+  utter_greet:
+    - text: "Hey there 👋 Welcome to the BIU Student Help Desk! How can I help you today?"
+    - text: "Hi 😊 I'm your BIU virtual assistant. Need help with fees, hostel, exams, results, or anything school related?"
+    - text: "Welcome to Benson Idahosa University Help Desk 🎓 What would you like help with today?"
+
+  utter_goodbye:
+    - text: "Goodbye 👋 Wishing you success in all your academic activities at BIU."
+    - text: "See you later 😊 Feel free to come back anytime you need help."
+    - text: "Bye for now 👋 Stay safe and good luck with your studies."
+
+  utter_thank:
+    - text: "You're welcome 😊 Happy to help!"
+    - text: "No problem at all 👍 Let me know if you need anything else."
+    - text: "Glad I could help 🎓"
+
+  utter_bot_challenge:
+    - text: "I'm the BIU Student Help Desk chatbot 🤖 I'm here to help students with information about Benson Idahosa University."
+
+  utter_ask_capabilities:
+    - text: "I can help you with school fees, hostel information, exam dates, office locations, portal issues, admission questions, GPA information, and lots more 😊"
+
+  utter_affirm:
+    - text: "Awesome 😊 What else would you like help with?"
+
+  utter_deny:
+    - text: "Alright 👍 Let me know if you need anything else."
+
+  # ── ACADEMIC CALENDAR ─────────────────────────────
+
+  utter_ask_resumption_date:
+    - text: "The current resumption date for BIU students is October 12, 2026 📅 Students are advised to resume early and complete their registration on time."
+
+  utter_ask_exam_date:
+    - text: "BIU examinations are expected to begin on February 9, 2026 📝 You can also check your departmental timetable for your specific exam schedule."
+
+  utter_ask_registration_deadline:
+    - text: "The course registration deadline is February 7, 2026 ⏳ Make sure you complete your registration before the deadline to avoid penalties."
+
+  utter_ask_how_to_register:
+    - text: |
+        You can register your courses by following these steps 😊
+
+        1️⃣ Log in to the BIU student portal  
+        2️⃣ Open the Course Registration section  
+        3️⃣ Select your courses carefully  
+        4️⃣ Submit and print your course form  
+
+        If you experience any issues, you can visit the ICT Centre for assistance.
+
+  utter_ask_academic_calendar:
+    - text: "The BIU academic calendar contains important dates for lectures, exams, registration, and holidays 📚 You can check it on the school website or notice board."
+
+  utter_ask_lecture_timetable:
+    - text: "You can get your lecture timetable from your department notice board, class group, or student portal 😊"
+
+  utter_ask_semester_duration:
+    - text: "A semester at BIU usually lasts about 18 weeks, including lectures, tests, and exams."
+
+  utter_ask_carryover_procedure:
+    - text: "If you have a carryover course, you should meet your course adviser or HOD for guidance. The course will usually be registered in the next semester it's available."
+
+  utter_ask_withdraw_course:
+    - text: "To withdraw from a course, visit your department office or course adviser. Your HOD may also need to approve the withdrawal."
+
+  utter_ask_add_drop_course:
+    - text: "Students can add or drop courses during the approved add/drop period at the beginning of the semester through the portal or department office."
+
+  # ── FEES & PAYMENT ───────────────────────────────
+
+  utter_ask_school_fees:
+    - text: "BIU school fees vary depending on your department and level 🎓 You can check your exact fee details on the portal or visit the Bursary office."
+
+  utter_ask_fees_deadline:
+    - text: "The deadline for payment of school fees is October 11, 2026 💳 Students are advised to pay early to avoid issues with registration."
+
+  utter_ask_how_to_pay_fees:
+    - text: |
+        Here's how to pay your school fees 😊
+
+        1️⃣ Log in to the student portal  
+        2️⃣ Open the Fee Payment section  
+        3️⃣ Generate your Remita payment invoice  
+        4️⃣ Pay online or at any bank  
+        5️⃣ Return to the portal to confirm payment
+
+  utter_ask_payment_receipt:
+    - text: "You can print your payment receipt directly from the payment history section on the student portal 🧾"
+
+  utter_ask_late_fee_penalty:
+    - text: "Late payment of fees may attract penalties and could prevent students from exams or course registration ⚠️"
+
+  utter_ask_fee_installment:
+    - text: "Yes 😊 BIU allows school fees to be paid in installments, usually in a 60% and 40% structure."
+
+  utter_ask_departmental_dues:
+    - text: "Departmental dues vary depending on your department. You can ask your course representative or department office for the correct amount."
+
+  utter_ask_acceptance_fee_amount:
+    - text: "The BIU acceptance fee is ₦50,000 💰 and it can be paid online through the student portal."
+
+  # ── OFFICES & LOCATIONS ──────────────────────────
+
+  utter_find_bursary_office:
+    - text: "The Bursary office is located on the first floor of the Faculty of Science building, second door on the right wing 😊"
+
+  utter_find_campus_life:
+    - text: "The Campus Life office is located above the cafeteria. They handle student welfare, hostel matters, and student activities."
+
+  utter_find_admissions_office:
+    - text: "The Admissions Office is located on the ground floor of the Faculty of Science building, left wing, first office."
+
+  utter_find_library:
+    - text: "The BIU library is located on the second floor of the Faculty of Science building 📚"
+
+  utter_find_clinic:
+    - text: "The BIU Health Centre is located close to the Faculty of Law 🏥"
+
+  utter_find_ict_centre:
+    - text: "The ICT Centre is located in the Faculty of Engineering building, first floor, right wing 💻"
+
+  utter_find_registry_office:
+    - text: "The Registry office handles transcripts, student records, and important academic documentation."
+
+  utter_find_student_affairs:
+    - text: "The Student Affairs office is located beside the cafeteria 😊"
+
+  utter_find_cafeteria:
+    - text: "The cafeteria is located beside the school gym 🍛 It operates daily from 6am to 10pm."
+
+  utter_find_security_office:
+    - text: "The Security office is located close to the main school gate 🚨"
+
+  utter_find_chapel:
+    - text: "The chapel is located behind the Faculty of Science building ⛪"
+
+  utter_find_sports_complex:
+    - text: "The sports complex contains facilities for football, basketball, volleyball, fitness training, and other sporting activities ⚽"
+
+  utter_find_lecture_halls:
+    - text: "Lecture halls like LR1, LR4, and LR5 are located within the faculty buildings 😊"
+
+  utter_find_senate_building:
+    - text: "The Senate Building contains important university administrative offices and management departments."
+
+  # ── ADMISSION ────────────────────────────────────
+
+  utter_ask_rector_name:
+    - text: "The Vice Chancellor of Benson Idahosa University is Prof. John Aroye Okhuoya 🎓"
+
+  utter_ask_cutoff_mark:
+    - text: "The general JAMB cutoff mark for BIU is 150, although some departments may require higher scores."
+
+  utter_ask_acceptance_procedure:
+    - text: |
+        To complete your admission acceptance 😊
+
+        1️⃣ Pay your acceptance fee  
+        2️⃣ Print your admission documents  
+        3️⃣ Visit the Admissions Office for clearance  
+        4️⃣ Complete the required documentation
+
+  utter_ask_clearance_documents:
+    - text: "Documents required for clearance include your WAEC/NECO result, JAMB slip, birth certificate, passport photographs, and acceptance fee receipt 📄"
+
+  utter_ask_clearance_date:
+    - text: "Fresh student clearance is scheduled for October 8, 2026 📅"
+
+  utter_ask_admission_requirements:
+    - text: "Admission requirements include valid O'level results, JAMB score, birth certificate, and other supporting documents."
+
+  utter_ask_change_of_course:
+    - text: "Students who want to change their course should visit their HOD or course adviser for proper guidance."
+
+  utter_ask_deferment_procedure:
+    - text: "Students who wish to defer admission or a semester should submit a deferment request through the Admissions Office or Registry."
+
+  utter_ask_postgraduate_admission:
+    - text: "BIU offers PGD, Masters, and PhD programmes 🎓 Interested applicants can visit the Admissions Office or school website for more details."
+
+  utter_ask_jupeb_programme:
+    - text: "The JUPEB programme prepares students for Direct Entry admission into 200 level and usually lasts for one academic session."
+
+  # ── HOSTEL ───────────────────────────────────────
+
+  utter_ask_hostel_availability:
+    - text: "Yes 😊 BIU provides hostel accommodation for students, but spaces are limited, so early application is advised."
+
+  utter_ask_hostel_fee:
+    - text: "The hostel fee is approximately ₦200,000 per academic session 🏠"
+
+  utter_ask_hostel_application:
+    - text: "To apply for hostel accommodation 😊
+
+        1️⃣ Log in to the student portal  
+        2️⃣ Open Hostel Application  
+        3️⃣ Select your preferred hostel  
+        4️⃣ Make payment  
+        5️⃣ Print your hostel allocation slip"
+
+  utter_ask_hostel_rules:
+    - text: "Hostel rules and regulations are available in the student handbook 📘"
+
+  utter_ask_hostel_location:
+    - text: "The student hostels are located within the campus residential area 🏠"
+
+  utter_ask_hostel_allocation:
+    - text: "Hostel allocation is done through the student portal after successful application and payment."
+
+  # ── PORTAL & RESULTS ─────────────────────────────
+
+  utter_ask_portal_link:
+    - text: "You can access the BIU student portal here 🌐 https://portal.biu.edu.ng"
+
+  utter_ask_portal_password_reset:
+    - text: "To reset your password, click on 'Forgot Password' on the portal login page and follow the instructions sent to your email."
+
+  utter_ask_how_to_check_result:
+    - text: "To check your result 😊
+
+        1️⃣ Log in to the portal  
+        2️⃣ Open the Results section  
+        3️⃣ Select your semester  
+        4️⃣ View or print your result"
+
+  utter_ask_transcript_procedure:
+    - text: "Transcript applications are processed through the Registry after payment of the required transcript fee."
+
+  utter_ask_portal_issues:
+    - text: "Having portal issues? 😅 Try clearing your browser cache or using another browser. You can also visit the ICT Centre for help."
+
+  utter_ask_how_to_print_result:
+    - text: "You can print your result directly from the Results section on the student portal 🖨️"
+
+  utter_ask_gpa_calculation:
+    - text: "BIU uses a 5-point GPA system where A = 5 points, B = 4 points, C = 3 points, D = 2 points, E = 1 point, and F = 0 points 📊"
+
+  utter_ask_missing_result:
+    - text: "If your result is missing, kindly contact your course adviser or department office for assistance."
+
+  # ── STAFF & FACULTY ──────────────────────────────
+
+  utter_ask_hod_computing:
+    - text: "The HOD of the Computing Department is Dr. Sunday Agu 💻"
+
+  utter_who_is_dean_computing:
+    - text: "The Dean of the Faculty of Computing is Prof. K.O. Obahiagbon 🎓"
+
+  utter_ask_vc_office_location:
+    - text: "The Vice Chancellor's office is located at the BIU Ugbor campus."
+
+  utter_ask_departmental_office:
+    - text: "The Computing department office is located within the Faculty of Computing building 😊"
+
+  utter_ask_lecturer_contact:
+    - text: "You can get lecturer contact information through your course representative or department office."
+
+  # ── STUDENT LIFE ─────────────────────────────────
+
+  utter_ask_student_id_card:
+    - text: "Student ID cards are processed through the ICT office 🪪"
+
+  utter_ask_library_card:
+    - text: "Library cards can be processed at the university library 📚"
+
+  utter_ask_school_bus:
+    - text: "BIU provides transportation services for students within approved campus routes 🚌"
+
+  utter_ask_scholarship_info:
+    - text: "Scholarship opportunities are available for qualified students 😊 You can visit Student Affairs for more details."
+
+  utter_ask_clubs_and_societies:
+    - text: "BIU has different student associations, clubs, fellowships, and societies that students can join 🎉"
+
+  utter_ask_sport_facilities:
+    - text: "BIU provides football fields, basketball courts, volleyball courts, and fitness areas for students ⚽"
+
+  utter_ask_cafeteria_menu:
+    - text: "You can visit the cafeteria to check today's available meals and menu options 🍛"
+
+  utter_ask_graduation_requirement:
+    - text: "Students must complete their required credit units, meet the CGPA requirement, and complete all clearance before graduation 🎓"
+
+  utter_ask_convocation_date:
+    - text: "The official convocation date has not been announced yet 📅"
+
+  utter_ask_dress_code:
+    - text: "Students are expected to dress in a decent and corporate manner during official school hours 👔"
+
+  utter_ask_internship_info:
+    - text: "For internship or SIWES information, students should contact their course adviser or department office."
+
+  utter_ask_industrial_training:
+    - text: "SIWES helps students gain practical industry experience and is coordinated by departments 💼"
+
+  utter_ask_nysc_mobilization:
+    - text: "Graduating students should complete all clearance and documentation processes for NYSC mobilization 🇳🇬"
+
+  utter_ask_result_upgrade:
+    - text: "BIU does not support unofficial result upgrades. Students with complaints should report through their department."
+
+  utter_ask_certificate_collection:
+    - text: "Certificates can be collected from the Registry after graduation clearance has been completed 🎓"
+
+  utter_ask_exam_malpractice_consequence:
+    - text: "Exam malpractice may lead to suspension, expulsion, or cancellation of results ⚠️"
+
+  utter_ask_referral_exam:
+    - text: "Students eligible for referral exams will receive updates from their department."
+
+  utter_ask_exam_deferment:
+    - text: "Students who cannot sit for exams due to valid reasons may apply for exam deferment through their department."
+
+  utter_ask_lost_id_card:
+    - text: "If you lose your ID card, report it immediately to the ICT office for replacement procedures 🪪"
+
+  utter_ask_wifi_access:
+    - text: "Campus WiFi is available for students 📶 Login details can be accessed through the school portal."
+
+  utter_ask_power_supply:
+    - text: "BIU provides stable power supply across the campus and hostel areas ⚡"
+
+  utter_default:
+    - text: "Sorry 😅 I don't have information about that yet. Please contact the appropriate office for assistance."
+    - text: "Hmm 🤔 I couldn't find details about that right now. You may need to contact the relevant department."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

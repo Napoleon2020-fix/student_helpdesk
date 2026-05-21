@@ -1,0 +1,405 @@
+version: "3.1"
+
+stories:
+
+- story: greet and help
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_capabilities
+  - action: utter_ask_capabilities
+
+- story: greet and goodbye
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask about fees
+  steps:
+  - intent: ask_school_fees
+  - action: utter_ask_school_fees
+  - intent: ask_fees_deadline
+  - action: utter_ask_fees_deadline
+  - intent: ask_how_to_pay_fees
+  - action: utter_ask_how_to_pay_fees
+
+- story: ask about registration
+  steps:
+  - intent: ask_registration_deadline
+  - action: utter_ask_registration_deadline
+  - intent: ask_how_to_register
+  - action: utter_ask_how_to_register
+
+- story: ask about exams
+  steps:
+  - intent: ask_exam_date
+  - action: utter_ask_exam_date
+  - intent: ask_how_to_check_result
+  - action: utter_ask_how_to_check_result
+
+- story: ask about hostel
+  steps:
+  - intent: ask_hostel_availability
+  - action: utter_ask_hostel_availability
+  - intent: ask_hostel_fee
+  - action: utter_ask_hostel_fee
+  - intent: ask_hostel_application
+  - action: utter_ask_hostel_application
+
+- story: ask about portal
+  steps:
+  - intent: ask_portal_link
+  - action: utter_ask_portal_link
+  - intent: ask_portal_issues
+  - action: utter_ask_portal_issues
+  - intent: ask_portal_password_reset
+  - action: utter_ask_portal_password_reset
+
+- story: ask about admission
+  steps:
+  - intent: ask_cutoff_mark
+  - action: utter_ask_cutoff_mark
+  - intent: ask_acceptance_procedure
+  - action: utter_ask_acceptance_procedure
+  - intent: ask_clearance_documents
+  - action: utter_ask_clearance_documents
+  - intent: ask_clearance_date
+  - action: utter_ask_clearance_date
+
+- story: find offices
+  steps:
+  - intent: find_campus_life
+  - action: utter_find_campus_life
+  - intent: find_bursary_office
+  - action: utter_find_bursary_office
+  - intent: find_admissions_office
+  - action: utter_find_admissions_office
+
+- story: thank and goodbye
+  steps:
+  - intent: thank
+  - action: utter_thank
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- story: ask hod of computing
+  steps:
+  - intent: ask_hod_computing
+  - action: utter_ask_hod_computing
+
+- story: ask dean of computing
+  steps:
+  - intent: who_is_dean_computing
+  - action: utter_who_is_dean_computing
+
+- story: single fee question
+  steps:
+  - intent: ask_school_fees
+  - action: utter_ask_school_fees
+
+- story: single exam question
+  steps:
+  - intent: ask_exam_date
+  - action: utter_ask_exam_date
+
+- story: single resumption question
+  steps:
+  - intent: ask_resumption_date
+  - action: utter_ask_resumption_date
+
+- story: single portal question
+  steps:
+  - intent: ask_portal_link
+  - action: utter_ask_portal_link
+
+- story: single hostel question
+  steps:
+  - intent: ask_hostel_availability
+  - action: utter_ask_hostel_availability
+
+- story: single location question
+  steps:
+  - intent: find_library
+  - action: utter_find_library
+
+- story: single clinic question
+  steps:
+  - intent: find_clinic
+  - action: utter_find_clinic
+
+- story: single ict question
+  steps:
+  - intent: find_ict_centre
+  - action: utter_find_ict_centre
+
+- story: single transcript question
+  steps:
+  - intent: ask_transcript_procedure
+  - action: utter_ask_transcript_procedure
+
+- story: single result question
+  steps:
+  - intent: ask_how_to_check_result
+  - action: utter_ask_how_to_check_result
+
+- story: ask about carryover
+  steps:
+  - intent: ask_carryover_procedure
+  - action: utter_ask_carryover_procedure
+
+- story: ask about SIWES
+  steps:
+  - intent: ask_industrial_training
+  - action: utter_ask_industrial_training
+
+- story: ask about NYSC
+  steps:
+  - intent: ask_nysc_mobilization
+  - action: utter_ask_nysc_mobilization
+
+- story: ask about dress code
+  steps:
+  - intent: ask_dress_code
+  - action: utter_ask_dress_code
+
+- story: ask about ID card
+  steps:
+  - intent: ask_student_id_card
+  - action: utter_ask_student_id_card
+
+- story: lost ID card
+  steps:
+  - intent: ask_lost_id_card
+  - action: utter_ask_lost_id_card
+
+- story: ask about referral exam
+  steps:
+  - intent: ask_referral_exam
+  - action: utter_ask_referral_exam
+
+- story: ask about wifi
+  steps:
+  - intent: ask_wifi_access
+  - action: utter_ask_wifi_access
+
+- story: ask about cafeteria
+  steps:
+  - intent: find_cafeteria
+  - action: utter_find_cafeteria
+
+- story: ask about chapel
+  steps:
+  - intent: find_chapel
+  - action: utter_find_chapel
+
+- story: ask about scholarship
+  steps:
+  - intent: ask_scholarship_info
+  - action: utter_ask_scholarship_info
+
+- story: ask about graduation
+  steps:
+  - intent: ask_graduation_requirement
+  - action: utter_ask_graduation_requirement
+
+- story: ask about malpractice
+  steps:
+  - intent: ask_exam_malpractice_consequence
+  - action: utter_ask_exam_malpractice_consequence
+
+- story: ask about change of course
+  steps:
+  - intent: ask_change_of_course
+  - action: utter_ask_change_of_course
+
+- story: ask about late fees
+  steps:
+  - intent: ask_late_fee_penalty
+  - action: utter_ask_late_fee_penalty
+
+- story: ask about missing result
+  steps:
+  - intent: ask_missing_result
+  - action: utter_ask_missing_result
+
+- story: ask about GPA
+  steps:
+  - intent: ask_gpa_calculation
+  - action: utter_ask_gpa_calculation
+
+- story: ask about hostel rules
+  steps:
+  - intent: ask_hostel_rules
+  - action: utter_ask_hostel_rules
+
+- story: ask about hostel location
+  steps:
+  - intent: ask_hostel_location
+  - action: utter_ask_hostel_location
+
+- story: ask about power supply
+  steps:
+  - intent: ask_power_supply
+  - action: utter_ask_power_supply
+
+- story: ask about clubs
+  steps:
+  - intent: ask_clubs_and_societies
+  - action: utter_ask_clubs_and_societies
+
+- story: ask about sports
+  steps:
+  - intent: ask_sport_facilities
+  - action: utter_ask_sport_facilities
+
+- story: ask about convocation
+  steps:
+  - intent: ask_convocation_date
+  - action: utter_ask_convocation_date
+
+- story: ask about certificate
+  steps:
+  - intent: ask_certificate_collection
+  - action: utter_ask_certificate_collection
+
+- story: ask about exam deferment
+  steps:
+  - intent: ask_exam_deferment
+  - action: utter_ask_exam_deferment
+
+- story: ask about timetable
+  steps:
+  - intent: ask_lecture_timetable
+  - action: utter_ask_lecture_timetable
+
+- story: ask about semester duration
+  steps:
+  - intent: ask_semester_duration
+  - action: utter_ask_semester_duration
+
+- story: ask about acceptance fee
+  steps:
+  - intent: ask_acceptance_fee_amount
+  - action: utter_ask_acceptance_fee_amount
+
+- story: ask about departmental dues
+  steps:
+  - intent: ask_departmental_dues
+  - action: utter_ask_departmental_dues
+
+- story: ask about installment payment
+  steps:
+  - intent: ask_fee_installment
+  - action: utter_ask_fee_installment
+
+- story: ask about library card
+  steps:
+  - intent: ask_library_card
+  - action: utter_ask_library_card
+
+- story: ask about school bus
+  steps:
+  - intent: ask_school_bus
+  - action: utter_ask_school_bus
+
+- story: ask about internship
+  steps:
+  - intent: ask_internship_info
+  - action: utter_ask_internship_info
+
+- story: ask about result upgrade
+  steps:
+  - intent: ask_result_upgrade
+  - action: utter_ask_result_upgrade
+
+- story: ask about postgraduate
+  steps:
+  - intent: ask_postgraduate_admission
+  - action: utter_ask_postgraduate_admission
+
+- story: ask about JUPEB
+  steps:
+  - intent: ask_jupeb_programme
+  - action: utter_ask_jupeb_programme
+
+- story: ask about deferment
+  steps:
+  - intent: ask_deferment_procedure
+  - action: utter_ask_deferment_procedure
+
+- story: ask about admission requirements
+  steps:
+  - intent: ask_admission_requirements
+  - action: utter_ask_admission_requirements
+
+- story: ask about VC office
+  steps:
+  - intent: ask_vc_office_location
+  - action: utter_ask_vc_office_location
+
+- story: ask about department office
+  steps:
+  - intent: ask_departmental_office
+  - action: utter_ask_departmental_office
+
+- story: ask about lecturer contact
+  steps:
+  - intent: ask_lecturer_contact
+  - action: utter_ask_lecturer_contact
+
+- story: ask about registry
+  steps:
+  - intent: find_registry_office
+  - action: utter_find_registry_office
+
+- story: ask about student affairs
+  steps:
+  - intent: find_student_affairs
+  - action: utter_find_student_affairs
+
+- story: ask about security
+  steps:
+  - intent: find_security_office
+  - action: utter_find_security_office
+
+- story: ask about sports complex
+  steps:
+  - intent: find_sports_complex
+  - action: utter_find_sports_complex
+
+- story: ask about lecture halls
+  steps:
+  - intent: find_lecture_halls
+  - action: utter_find_lecture_halls
+
+- story: ask about senate building
+  steps:
+  - intent: find_senate_building
+  - action: utter_find_senate_building
+
+- story: ask about add drop course
+  steps:
+  - intent: ask_add_drop_course
+  - action: utter_ask_add_drop_course
+
+- story: ask about withdraw course
+  steps:
+  - intent: ask_withdraw_course
+  - action: utter_ask_withdraw_course
+
+- story: ask about hostel allocation
+  steps:
+  - intent: ask_hostel_allocation
+  - action: utter_ask_hostel_allocation
+
+- story: ask about print result
+  steps:
+  - intent: ask_how_to_print_result
+  - action: utter_ask_how_to_print_result

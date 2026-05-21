@@ -1,0 +1,33 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say greet anytime user says hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say thank you response anytime user thanks
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- rule: Respond to bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- rule: Respond to capabilities question
+  steps:
+  - intent: ask_capabilities
+  - action: utter_ask_capabilities
+
+- rule: Fallback rule
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default

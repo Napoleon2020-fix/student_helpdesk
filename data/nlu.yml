@@ -1,0 +1,1119 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good afternoon
+    - good evening
+    - howdy
+    - hey there
+    - hi there
+    - heyy
+    - hello there
+    - good day
+    - how far
+    - how na
+    - wetin sup
+    - e don do
+    - omo hello
+    - abeg help me
+    - how body
+    - I wan ask something
+    - abeg I need help
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - see ya
+    - later
+    - I'm done
+    - thanks bye
+    - good night
+    - take care
+    - I have to go
+    - ciao
+    - I don go
+    - e don do
+    - I don finish
+    - later abeg
+    - make I go
+    - bye bye
+
+- intent: thank
+  examples: |
+    - thank you
+    - thanks
+    - thanks a lot
+    - I appreciate it
+    - thank you so much
+    - God bless you
+    - thanks for the help
+    - you have been helpful
+    - appreciate it
+    - e don do thanks
+    - you too much
+    - omo thanks
+    - God go bless you
+    - you don help me
+    - na you biko
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you human?
+    - who are you?
+    - what are you?
+    - am I talking to a robot?
+    - are you real?
+    - are you an AI?
+    - is this a bot?
+    - na robot I dey talk to?
+    - you be human being?
+    - who you be sef?
+
+- intent: ask_capabilities
+  examples: |
+    - what can you do?
+    - how can you help me?
+    - what do you know?
+    - what kind of questions can I ask?
+    - what information do you have?
+    - what are you capable of?
+    - help me
+    - I need help
+    - wetin you fit do?
+    - how you fit help me?
+    - wetin you sabi?
+    - abeg wetin you know about BIU?
+
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - yep
+    - sure
+    - okay
+    - ok
+    - correct
+    - right
+    - exactly
+    - yes please
+    - yes na
+    - yea
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - nah
+    - not really
+    - no thanks
+    - negative
+    - I don't think so
+    - no na
+    - abeg no
+
+# ── ACADEMIC CALENDAR ─────────────────────────────────────────────────────────
+
+- intent: ask_resumption_date
+  examples: |
+    - when does school resume?
+    - what is the resumption date?
+    - when do lectures start?
+    - when is school resuming?
+    - resumption date?
+    - when will lectures begin?
+    - when is BIU resuming?
+    - what date is resumption?
+    - when does semester start?
+    - when is the next semester starting?
+    - when do we resume?
+    - school don open?
+    - when school go open?
+    - abeg when we go resume?
+    - resumption date for this semester?
+    - when school dey start?
+    - e don time to resume?
+    - when lecture go start?
+    - BIU don resume?
+
+- intent: ask_exam_date
+  examples: |
+    - when is the exam?
+    - when does exam start?
+    - exam timetable?
+    - what date is exam?
+    - when are exams?
+    - examination date?
+    - when is first semester exam?
+    - when is second semester exam?
+    - exam schedule?
+    - when do exams begin?
+    - BIU exam date?
+    - when exam go start?
+    - abeg when exam dey?
+    - exam don dey close?
+    - when e go be exam?
+    - exam timetable don come out?
+    - when them go release exam timetable?
+    - omo when exam dey?
+
+- intent: ask_registration_deadline
+  examples: |
+    - when is the deadline for course registration?
+    - course registration deadline?
+    - when does portal close for registration?
+    - last date to register courses?
+    - registration deadline?
+    - when can I no longer register?
+    - course reg deadline?
+    - when is course reg closing?
+    - when course reg go close?
+    - abeg when them go lock portal for reg?
+    - last day to do course reg?
+    - course reg deadline don pass?
+    - when e go too late to register?
+
+- intent: ask_how_to_register
+  examples: |
+    - how do I register my courses?
+    - course registration steps?
+    - how to register on portal?
+    - steps to register courses?
+    - how do I do course registration?
+    - I want to register my courses
+    - how to do course reg?
+    - course reg how?
+    - how I go do course reg?
+    - abeg teach me how to register courses
+    - I no sabi how to do course reg
+    - wetin I go do for course registration?
+    - portal how to register?
+
+- intent: ask_academic_calendar
+  examples: |
+    - what is the academic calendar?
+    - school calendar for this year?
+    - academic schedule?
+    - BIU academic calendar?
+    - where can I find the academic calendar?
+    - school schedule?
+    - where I go see school calendar?
+    - abeg where school calendar dey?
+    - BIU calendar for this year?
+
+- intent: ask_lecture_timetable
+  examples: |
+    - where is the lecture timetable?
+    - how do I get my timetable?
+    - class schedule?
+    - where can I find my lecture schedule?
+    - timetable for this semester?
+    - where timetable dey?
+    - abeg how I go see my timetable?
+    - class timetable don come out?
+    - who get the timetable?
+    - when them go post timetable?
+
+- intent: ask_semester_duration
+  examples: |
+    - how long is a semester?
+    - how many weeks is the semester?
+    - when does semester end?
+    - semester duration?
+    - how long does school last per semester?
+    - how long semester dey last?
+    - semester how many weeks?
+    - abeg when semester go end?
+
+- intent: ask_carryover_procedure
+  examples: |
+    - how do I handle carryover?
+    - I have carryover courses what do I do?
+    - carryover procedure?
+    - how to register carryover?
+    - what happens if I fail a course?
+    - I fail course wetin I go do?
+    - how carryover work for BIU?
+    - abeg I get carryover how I go do am?
+    - carryover registration how?
+    - I carry course over wetin I go do?
+    - carryover how e dey work?
+
+- intent: ask_withdraw_course
+  examples: |
+    - how do I drop a course?
+    - can I withdraw from a course?
+    - how to remove a course from my registration?
+    - course withdrawal procedure?
+    - I want to drop a course
+    - how I go remove course wey I register?
+    - abeg I wan drop one course how?
+    - can I cancel a registered course?
+
+- intent: ask_add_drop_course
+  examples: |
+    - can I still add a course?
+    - add drop period?
+    - how long can I change my courses?
+    - when does add drop end?
+    - I want to add another course
+    - abeg I wan add course how I go do am?
+    - add course deadline?
+    - when e go too late to add course?
+
+# ── FEES & PAYMENT ────────────────────────────────────────────────────────────
+
+- intent: ask_school_fees
+  examples: |
+    - how much is school fees?
+    - what is the tuition fee?
+    - how much do I pay?
+    - fee for this semester?
+    - BIU school fees?
+    - how much is BIU fees?
+    - what is the school fee?
+    - fees for 100 level?
+    - fees for 200 level?
+    - how much is tuition?
+    - how much school fees be?
+    - abeg how much school fees?
+    - BIU fees how much e reach?
+    - school fee don increase?
+    - how much I go pay this semester?
+    - fees for this year how much?
+    - omo BIU school fees don too much o
+    - how much I suppose pay?
+
+- intent: ask_fees_deadline
+  examples: |
+    - when is the deadline for paying fees?
+    - last date to pay school fees?
+    - fee payment deadline?
+    - when must I pay my fees?
+    - when is fees deadline?
+    - school fees deadline?
+    - last day to pay fees?
+    - abeg when I go pay fees last last?
+    - fees deadline don reach?
+    - when them go block portal if I no pay?
+    - when e go too late to pay fees?
+
+- intent: ask_how_to_pay_fees
+  examples: |
+    - where do I pay my fees?
+    - how do I pay school fees?
+    - can I pay fees online?
+    - how to pay BIU fees?
+    - steps to pay school fees?
+    - fee payment procedure?
+    - how do I make fee payment?
+    - how I go pay school fees?
+    - abeg how to pay fees?
+    - I wan pay fees but I no know how
+    - fees payment steps?
+    - Remita how e work for BIU?
+    - I go pay fees bank or online?
+
+- intent: find_bursary_office
+  examples: |
+    - where is the bursary?
+    - bursary office location?
+    - where is the accounts department?
+    - how do I get to the bursary?
+    - where is bursary office in BIU?
+    - bursary where?
+    - where can I find the bursary?
+    - where bursary dey?
+    - abeg bursary office where e dey?
+    - I wan go bursary how I go reach?
+    - bursary for which side?
+
+- intent: ask_payment_receipt
+  examples: |
+    - how do I get my receipt?
+    - where is my payment receipt?
+    - fee receipt how to get?
+    - how to print payment receipt?
+    - where to get payment receipt?
+    - I need my school fees receipt
+    - how I go print my receipt?
+    - abeg where my payment receipt dey?
+    - I pay fees but I no see receipt
+    - receipt how to collect?
+
+- intent: ask_late_fee_penalty
+  examples: |
+    - what happens if I pay fees late?
+    - penalty for late fee payment?
+    - is there a fine for paying fees late?
+    - late payment consequences?
+    - wetin go happen if I pay late?
+    - abeg if I pay fees late wetin dem go do me?
+    - late fees penalty how much?
+    - I miss fees deadline wetin I go do?
+
+- intent: ask_fee_installment
+  examples: |
+    - can I pay fees in installment?
+    - part payment allowed?
+    - can I pay half fees?
+    - installment payment for school fees?
+    - abeg I fit pay half half?
+    - part part payment allowed?
+    - I no get full money can I pay small first?
+    - can I pay school fees in two parts?
+
+- intent: ask_departmental_dues
+  examples: |
+    - how much are departmental dues?
+    - student association dues?
+    - do I have to pay departmental levy?
+    - departmental fees how much?
+    - abeg how much departmental dues be?
+    - association levy how much?
+    - dues for computing department?
+
+- intent: ask_acceptance_fee_amount
+  examples: |
+    - how much is acceptance fee?
+    - what is the acceptance fee?
+    - acceptance fee amount?
+    - how much I go pay for acceptance?
+    - abeg acceptance fee how much?
+    - I don get admission how much acceptance fee?
+
+# ── OFFICES & LOCATIONS ───────────────────────────────────────────────────────
+
+- intent: find_campus_life
+  examples: |
+    - where is the campus life office?
+    - campus life location?
+    - where is student affairs in BIU?
+    - how do I find campus life office?
+    - campus life office where?
+    - where campus life dey?
+    - abeg campus life office which side?
+    - student affairs where e dey?
+    - I wan go campus life office where e dey?
+
+- intent: find_admissions_office
+  examples: |
+    - where is the admission office?
+    - admissions office location?
+    - where do I go for admission?
+    - where is admissions in BIU?
+    - admission office where?
+    - admissions where e dey?
+    - abeg where admission office dey?
+    - I wan go admissions which side?
+
+- intent: find_library
+  examples: |
+    - where is the library?
+    - school library location?
+    - where can I find books?
+    - BIU library where?
+    - how do I get to the library?
+    - library location?
+    - library where e dey?
+    - abeg where library dey?
+    - I wan go library which side?
+    - library hours?
+    - when library dey open?
+
+- intent: find_clinic
+  examples: |
+    - where is the clinic?
+    - school hospital location?
+    - medical centre where?
+    - where is the health centre?
+    - BIU clinic location?
+    - where is the sick bay?
+    - health centre where?
+    - clinic where e dey?
+    - abeg where clinic dey?
+    - I dey sick where I go for BIU?
+    - health centre which side?
+    - sick bay where?
+
+- intent: find_ict_centre
+  examples: |
+    - where is the ICT centre?
+    - computer lab location?
+    - where is the cyber cafe on campus?
+    - ICT centre where?
+    - where can I print on campus?
+    - where is the computer lab?
+    - BIU ICT centre?
+    - ICT where e dey?
+    - abeg where ICT centre dey?
+    - I wan print something where I go?
+    - cyber cafe on campus where?
+    - where I go fix my portal issue?
+
+- intent: find_registry_office
+  examples: |
+    - where is the registry?
+    - registry office location?
+    - where do I go for transcript?
+    - registry where e dey?
+    - abeg registry which side?
+    - where registry dey for BIU?
+
+- intent: find_student_affairs
+  examples: |
+    - where is student affairs?
+    - student affairs office location?
+    - student affairs where?
+    - abeg student affairs which side?
+    - where student affairs dey?
+
+- intent: find_cafeteria
+  examples: |
+    - where is the cafeteria?
+    - school canteen location?
+    - where is the food court?
+    - where can I eat on campus?
+    - cafeteria where e dey?
+    - abeg where cafe dey?
+    - I wan buy food which side?
+    - canteen where?
+    - where school cafe dey?
+
+- intent: find_security_office
+  examples: |
+    - where is the security office?
+    - security post location?
+    - who do I call for emergency on campus?
+    - security where e dey?
+    - abeg security office which side?
+    - campus security contact?
+
+- intent: find_chapel
+  examples: |
+    - where is the chapel?
+    - church on campus location?
+    - where do they have service on campus?
+    - chapel where e dey?
+    - abeg where church dey for BIU?
+    - BIU chapel location?
+    - service time for chapel?
+
+- intent: find_sports_complex
+  examples: |
+    - where is the sports complex?
+    - where can I play football on campus?
+    - sports facility location?
+    - gym location?
+    - where sports ground dey?
+    - abeg football field which side?
+    - where I go exercise for BIU?
+
+- intent: find_lecture_halls
+  examples: |
+    - where is lecture hall 1?
+    - where is LH2?
+    - lecture hall location?
+    - where are the lecture halls?
+    - where is my class?
+    - LH1 where e dey?
+    - abeg lecture hall which side?
+    - where faculty hall dey?
+
+- intent: find_senate_building
+  examples: |
+    - where is the senate building?
+    - VC office location?
+    - senate building where?
+    - admin building where e dey?
+    - abeg where senate building dey?
+
+# ── ADMISSION ─────────────────────────────────────────────────────────────────
+
+- intent: ask_rector_name
+  examples: |
+    - who is the vice chancellor?
+    - who is the VC of BIU?
+    - name of vice chancellor?
+    - who is the rector?
+    - who heads BIU?
+    - who is in charge of BIU?
+    - BIU vice chancellor name?
+    - who be BIU VC?
+    - abeg who be the vice chancellor?
+    - BIU rector na who?
+    - who dey run BIU?
+
+- intent: ask_cutoff_mark
+  examples: |
+    - what is the cut off mark?
+    - JAMB cutoff for BIU?
+    - minimum score to gain admission?
+    - BIU cutoff mark?
+    - what JAMB score do I need?
+    - minimum JAMB score for BIU?
+    - cutoff mark for BIU?
+    - how much JAMB score I need?
+    - abeg BIU cutoff mark how much?
+    - minimum score for admission?
+    - I score [number] e go enough for BIU?
+
+- intent: ask_acceptance_procedure
+  examples: |
+    - how do I accept my admission?
+    - acceptance fee procedure?
+    - how to accept offer of admission?
+    - admission acceptance steps?
+    - I got admitted how do I accept?
+    - steps to accept BIU admission?
+    - I get admission how I go accept am?
+    - abeg how I go do acceptance?
+    - acceptance steps for BIU?
+    - I don get BIU admission wetin I go do next?
+
+- intent: ask_clearance_documents
+  examples: |
+    - what documents do I need for clearance?
+    - clearance requirements?
+    - documents for fresh students?
+    - what to bring for clearance?
+    - clearance documents list?
+    - what papers do I need for clearance?
+    - BIU clearance requirements?
+    - wetin I go carry come for clearance?
+    - abeg clearance documents list?
+    - fresh student wetin I need for clearance?
+    - documents for matric?
+
+- intent: ask_clearance_date
+  examples: |
+    - when is clearance?
+    - clearance date for new students?
+    - fresh student clearance schedule?
+    - when is BIU clearance?
+    - what date is clearance?
+    - clearance date?
+    - when clearance go hold?
+    - abeg when clearance dey?
+    - fresh student clearance when e go be?
+    - matric clearance date?
+
+- intent: ask_admission_requirements
+  examples: |
+    - what are the requirements for admission?
+    - BIU admission requirements?
+    - what do I need to gain admission?
+    - O level requirements for BIU?
+    - JAMB subjects for BIU?
+    - what I need make I enter BIU?
+    - abeg BIU requirements?
+    - how many subjects I need for O level?
+
+- intent: ask_change_of_course
+  examples: |
+    - can I change my course?
+    - how do I change department?
+    - course change procedure?
+    - I want to change from one department to another
+    - change of course process?
+    - abeg I wan change course how I go do am?
+    - I no like my course I wan change?
+    - how to change department at BIU?
+
+- intent: ask_deferment_procedure
+  examples: |
+    - can I defer my admission?
+    - how to defer my semester?
+    - deferment process at BIU?
+    - I want to pause my studies
+    - how I go defer my admission?
+    - abeg I wan defer this semester how?
+    - deferment procedure?
+    - I wan take break from school how?
+
+- intent: ask_postgraduate_admission
+  examples: |
+    - how do I apply for masters?
+    - postgraduate admission at BIU?
+    - masters degree at BIU?
+    - PhD admission BIU?
+    - how to do PG at BIU?
+    - abeg BIU do masters programme?
+    - postgraduate how to apply?
+
+- intent: ask_jupeb_programme
+  examples: |
+    - what is JUPEB?
+    - does BIU have JUPEB?
+    - JUPEB at BIU?
+    - how to apply for JUPEB?
+    - JUPEB programme details?
+    - abeg BIU get JUPEB?
+    - JUPEB requirements?
+
+# ── HOSTEL ────────────────────────────────────────────────────────────────────
+
+- intent: ask_hostel_availability
+  examples: |
+    - is hostel available?
+    - does BIU have hostel?
+    - on campus accommodation?
+    - does the school have hostel?
+    - BIU hostel available?
+    - is there hostel in BIU?
+    - can I stay on campus?
+    - BIU get hostel?
+    - abeg school get hostel?
+    - hostel dey for BIU?
+    - I fit stay for school compound?
+    - on campus lodge dey?
+
+- intent: ask_hostel_fee
+  examples: |
+    - how much is hostel?
+    - hostel fee?
+    - cost of accommodation on campus?
+    - BIU hostel price?
+    - how much is BIU hostel?
+    - hostel fee how much?
+    - hostel how much e cost?
+    - abeg hostel fee how much be am?
+    - how much I go pay for hostel?
+    - accommodation fee?
+
+- intent: ask_hostel_application
+  examples: |
+    - how do I apply for hostel?
+    - hostel application procedure?
+    - how to get hostel space?
+    - steps to apply for hostel?
+    - how to get accommodation in BIU?
+    - hostel application how?
+    - how I go apply for hostel?
+    - abeg how to get hostel for BIU?
+    - I wan stay on campus how I go do am?
+    - hostel how to get am?
+
+- intent: ask_hostel_rules
+  examples: |
+    - what are the hostel rules?
+    - hostel regulations?
+    - can visitors come to hostel?
+    - what time is hostel curfew?
+    - hostel rules and regulations?
+    - wetin be hostel rules?
+    - abeg hostel curfew time?
+    - visitors allowed for hostel?
+    - when hostel gate go close?
+
+- intent: ask_hostel_location
+  examples: |
+    - where is the hostel?
+    - hostel location?
+    - where are the hostels in BIU?
+    - male hostel where e dey?
+    - female hostel location?
+    - abeg where hostel dey?
+    - hostel which side?
+    - where I go sleep for BIU?
+
+- intent: ask_hostel_allocation
+  examples: |
+    - how does hostel allocation work?
+    - when will I get my room?
+    - hostel room assignment?
+    - how room allocation dey work?
+    - abeg when I go know my hostel room?
+    - hostel allocation how e go work?
+    - when dem go give me room?
+
+# ── PORTAL & RESULTS ──────────────────────────────────────────────────────────
+
+- intent: ask_portal_link
+  examples: |
+    - what is the portal link?
+    - school portal URL?
+    - where is the student portal?
+    - BIU portal link?
+    - what is BIU portal address?
+    - portal website?
+    - BIU student portal?
+    - portal link wetin e be?
+    - abeg portal website?
+    - BIU portal where e dey?
+    - which website be school portal?
+
+- intent: ask_portal_password_reset
+  examples: |
+    - I forgot my portal password
+    - how to reset portal password?
+    - portal password reset?
+    - I can't remember my password
+    - forgot password portal?
+    - how do I change my portal password?
+    - reset my password
+    - I forget my password how I go reset am?
+    - abeg portal password I forget am
+    - portal no dey let me enter
+    - I no remember my password again
+
+- intent: ask_how_to_check_result
+  examples: |
+    - how do I check my result?
+    - where to check result?
+    - how to see my GPA on portal?
+    - how to check my result?
+    - where is my result?
+    - how do I see my grades?
+    - result check how?
+    - how to view result on portal?
+    - how I go see my result?
+    - abeg where result dey for portal?
+    - my result don come out?
+    - how I go check my GPA?
+    - result where e dey for portal?
+
+- intent: ask_transcript_procedure
+  examples: |
+    - how do I get my transcript?
+    - transcript application?
+    - official transcript procedure?
+    - how to apply for transcript?
+    - BIU transcript how?
+    - steps to get transcript?
+    - where do I apply for transcript?
+    - how I go get transcript?
+    - abeg transcript how to apply?
+    - I need official transcript how I go get am?
+
+- intent: ask_portal_issues
+  examples: |
+    - portal is not working
+    - I can't login to portal
+    - portal error what do I do?
+    - BIU portal not working?
+    - portal login problem?
+    - I have issues with the portal
+    - portal is down
+    - can't access portal
+    - portal no dey work
+    - abeg portal don spoil
+    - I no fit enter portal
+    - portal dey give me error
+    - portal problem how I go fix am?
+    - I dey try login but e no work
+
+- intent: ask_how_to_print_result
+  examples: |
+    - how do I print my result?
+    - print result from portal?
+    - result slip how to print?
+    - how I go print my result?
+    - abeg how to print result?
+    - where I go print result for portal?
+
+- intent: ask_gpa_calculation
+  examples: |
+    - how is GPA calculated?
+    - how does grading work at BIU?
+    - what is the grading scale?
+    - GPA calculation?
+    - what score is A at BIU?
+    - how CGPA dey calculated?
+    - abeg how BIU grade work?
+    - A grade na how much for BIU?
+
+- intent: ask_missing_result
+  examples: |
+    - my result is missing
+    - I can't see my result on the portal
+    - result not showing?
+    - my grade is not on the portal
+    - I no see my result for portal
+    - abeg my result no show
+    - result missing wetin I go do?
+    - my result never show for portal
+
+# ── STAFF & FACULTY ───────────────────────────────────────────────────────────
+
+- intent: ask_hod_computing
+  examples: |
+    - who is the hod of computing?
+    - who is the head of department for computer science?
+    - Head of department computing?
+    - who is in charge of computing department?
+    - HOD computing
+    - computing HOD na who?
+    - abeg who be HOD for computing?
+    - who dey head computing department?
+    - HOD CSC na who?
+
+- intent: who_is_dean_computing
+  examples: |
+    - who is the dean of computing?
+    - who is the dean of computer science?
+    - Dean of computing?
+    - who heads the computing faculty?
+    - computing dean na who?
+    - abeg who be dean for computing?
+    - who dey head computing faculty?
+    - dean CSC na who?
+
+- intent: ask_vc_office_location
+  examples: |
+    - where is the VC office?
+    - vice chancellor office location?
+    - where does the VC sit?
+    - VC office which side?
+    - abeg where VC office dey?
+
+- intent: ask_departmental_office
+  examples: |
+    - where is the computing department office?
+    - department office location?
+    - where is the CSC office?
+    - computing department which side?
+    - abeg department office where e dey?
+    - where I go find department office?
+
+- intent: ask_lecturer_contact
+  examples: |
+    - how do I contact my lecturer?
+    - lecturer contact details?
+    - where can I find my lecturer?
+    - lecturer phone number?
+    - how I go reach my lecturer?
+    - abeg lecturer contact how I go get am?
+    - where I go see lecturer office hours?
+
+# ── STUDENT LIFE ──────────────────────────────────────────────────────────────
+
+- intent: ask_student_id_card
+  examples: |
+    - how do I get my ID card?
+    - student ID card procedure?
+    - where do I collect my ID card?
+    - matric card how to get?
+    - abeg how I go get my ID card?
+    - student card how I go collect am?
+    - I never get ID card how I go do?
+    - school ID where I go get am?
+
+- intent: ask_library_card
+  examples: |
+    - how do I get a library card?
+    - library card procedure?
+    - do I need a card to use the library?
+    - library card how to get?
+    - abeg how I go get library card?
+    - I wan use library wetin I need?
+
+- intent: ask_school_bus
+  examples: |
+    - is there a school bus?
+    - does BIU have transport?
+    - school bus schedule?
+    - BIU bus service?
+    - BIU get school bus?
+    - abeg school bus dey?
+    - transport how e work for BIU?
+
+- intent: ask_scholarship_info
+  examples: |
+    - is there scholarship at BIU?
+    - how do I apply for scholarship?
+    - bursary for students?
+    - scholarship information?
+    - BIU get scholarship?
+    - abeg scholarship dey for BIU?
+    - how I go apply for scholarship?
+    - I need financial aid
+
+- intent: ask_clubs_and_societies
+  examples: |
+    - what clubs are in BIU?
+    - how do I join a club?
+    - student associations at BIU?
+    - what societies does BIU have?
+    - BIU get any clubs?
+    - abeg wetin clubs dey for BIU?
+    - how I go join association?
+    - student union activities?
+
+- intent: ask_sport_facilities
+  examples: |
+    - does BIU have a gym?
+    - sport facilities at BIU?
+    - where can I play football?
+    - basketball court at BIU?
+    - BIU get gym?
+    - abeg sport facilities wey BIU get?
+    - where football field dey?
+    - where I go exercise for campus?
+
+- intent: ask_cafeteria_menu
+  examples: |
+    - what food do they sell in the cafeteria?
+    - cafeteria menu?
+    - how much is food at BIU?
+    - what can I eat on campus?
+    - food price for cafe?
+    - abeg wetin dem dey sell for cafe?
+    - café menu how e be?
+    - how much food dey cost for school?
+
+- intent: ask_graduation_requirement
+  examples: |
+    - what are the requirements to graduate?
+    - graduation requirements?
+    - minimum CGPA to graduate?
+    - how many units to graduate?
+    - wetin I need to graduate?
+    - abeg graduation requirements for BIU?
+    - how I go know if I don qualify to graduate?
+    - minimum GPA to finish school?
+
+- intent: ask_convocation_date
+  examples: |
+    - when is convocation?
+    - graduation ceremony date?
+    - BIU convocation date?
+    - when is the next graduation?
+    - when convocation go hold?
+    - abeg BIU graduation when e go be?
+    - convocation date?
+
+- intent: ask_dress_code
+  examples: |
+    - what is the dress code at BIU?
+    - what can I wear to lectures?
+    - BIU dress code?
+    - what is allowed to wear on campus?
+    - wetin I fit wear come school?
+    - abeg BIU dress code how e be?
+    - they allow jeans for BIU?
+    - what I no fit wear for campus?
+
+- intent: ask_internship_info
+  examples: |
+    - does BIU help with internship?
+    - internship placement?
+    - how do I get an internship?
+    - internship information?
+    - abeg BIU get internship programme?
+    - how I go get internship?
+    - internship for students?
+
+- intent: ask_industrial_training
+  examples: |
+    - how does SIWES work?
+    - when is industrial training?
+    - IT period for BIU?
+    - SIWES registration?
+    - when IT go start?
+    - abeg SIWES how e work for BIU?
+    - industrial training how to register?
+    - IT attachment procedure?
+    - when I go do IT?
+
+- intent: ask_nysc_mobilization
+  examples: |
+    - how does NYSC work after graduation?
+    - NYSC mobilization at BIU?
+    - what documents do I need for NYSC?
+    - when does BIU mobilize for NYSC?
+    - NYSC how e work for BIU?
+    - abeg NYSC mobilization how?
+    - after school how I go do NYSC?
+    - NYSC documents?
+
+- intent: ask_result_upgrade
+  examples: |
+    - can my result be upgraded?
+    - how to upgrade my grade?
+    - result upgrade possible?
+    - my grade is wrong can it be changed?
+    - abeg result upgrade possible for BIU?
+    - how I go upgrade my result?
+    - can I complain about my grade?
+
+- intent: ask_certificate_collection
+  examples: |
+    - how do I collect my certificate?
+    - certificate collection after graduation?
+    - where do I pick up my certificate?
+    - when can I collect my degree certificate?
+    - certificate where I go collect am?
+    - abeg how I go pick up my certificate?
+    - degree certificate collection procedure?
+
+- intent: ask_exam_malpractice_consequence
+  examples: |
+    - what happens if you cheat in exam?
+    - exam malpractice punishment?
+    - consequences of cheating in BIU?
+    - what if I am caught cheating?
+    - exam cheating wetin go happen?
+    - abeg if dem catch me for malpractice wetin go happen?
+    - punishment for exam malpractice?
+
+- intent: ask_referral_exam
+  examples: |
+    - what is a referral exam?
+    - how does supplementary exam work?
+    - referral exam procedure?
+    - I have referral what do I do?
+    - referral exam how e work?
+    - abeg I get referral wetin I go do?
+    - supplementary exam how to apply?
+    - referral exam registration?
+
+- intent: ask_exam_deferment
+  examples: |
+    - can I defer my exam?
+    - I missed my exam what do I do?
+    - exam deferment procedure?
+    - medical deferment for exam?
+    - I miss exam wetin I go do?
+    - abeg exam deferment how e work?
+    - I sick during exam wetin I go do?
+    - how I go defer my exam?
+
+- intent: ask_lost_id_card
+  examples: |
+    - I lost my ID card
+    - how do I replace my ID card?
+    - lost student card what to do?
+    - ID card replacement?
+    - I lose my ID card wetin I go do?
+    - abeg I lose my school card how I go replace am?
+    - replacement for lost ID card?
+
+- intent: ask_wifi_access
+  examples: |
+    - does BIU have wifi?
+    - how do I connect to campus wifi?
+    - wifi on campus?
+    - BIU internet access?
+    - BIU get wifi?
+    - abeg wifi dey for campus?
+    - how I go connect internet for school?
+    - campus network how e work?
+
+- intent: ask_power_supply
+  examples: |
+    - is there light in the hostel?
+    - power supply in hostel?
+    - do hostels have generator?
+    - electricity on campus?
+    - hostel get light?
+    - abeg light dey for hostel?
+    - generator dey for hostel?
+    - NEPA situation for BIU hostel?e
